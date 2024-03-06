@@ -1,0 +1,23 @@
+.navbar{
+    height: 15vh;
+    align-items: center;
+    display: flex;
+    background-color: red !important;
+}
+
+.dropdown-menu{
+    padding: 20px !important;
+}
+
+.formations_details{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    z-index: 1000;
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    width: 40rem;
+    border-radius: 10px;
+}
