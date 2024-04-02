@@ -1,23 +1,44 @@
-.navbar{
-    height: 15vh;
-    align-items: center;
+.navbar_base{
     display: flex;
-    background-color: red !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 2%;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100svw;
+    position: fixed;
 }
 
-.dropdown-menu{
-    padding: 20px !important;
+.navbar_base .logo_nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
-.formations_details{
-    position: absolute;
-    top: 0%;
-    left: 100%;
-    z-index: 1000;
-    display: none;
-    background-color: white;
-    padding: 20px;
-    border: 1px solid black;
-    width: 40rem;
-    border-radius: 10px;
+.logo_nav img{
+    height: 100%;
+    width: 100%;
+    min-width: 80px;
+    min-height: 80px;
+}
+
+.liens_nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.liens_nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.liens_nav a:hover{
+    color: #2ea2e1;
+    transition: 0.3s;
+    transform: scale(1.1);
 }
