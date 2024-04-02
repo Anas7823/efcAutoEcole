@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil | EFC Auto-école</title>
+  <link rel="stylesheet" href="./public/style/base.css">
   <link rel="stylesheet" href="./public/style/index.css">
   <!-- Bootstrapp -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -13,18 +14,113 @@
 <body>
     <div class="navbar_base">
       <div class="logo_nav">
-        <img src="./public/assets/logo.jpg" alt="Logo EFC Auto-école">
+        <img src="./public/assets/logo.jpg" class="logo-efc" alt="Logo EFC Auto-école">
+        <img src="./public/assets/logoqualiopi.png" class="logo-qualiopi" alt="Logo Qualiopi">
+
       </div>
       <div class="liens_nav">
-        <a href="" class="item_nav">Accueil</a>
-        <a href="item_nav">Formations</a>
-        <a href="item_nav">Contact</a>
+        <a href="#" class="item_nav">Accueil</a>
+        <a href="#formations" class="item_nav">Formations</a>
+        <a href="#contact" class="item_nav">Contact</a>
       </div>
     </div>
     <div class="container">
       <div class="video_bg">
         <video src="./public/assets/accueil/video/video.mp4" autoplay loop muted></video>
       </div>
+
+      <div class="accueil">
+        <h1>Bienvenue sur le site de l'EFC Auto-école</h1>
+        <p>Vous souhaitez passer votre permis de conduire ou passer votre code ? Vous êtes au bon endroit !</p>
+        <a href="#presentation" class="btn-plus">En savoir plus</a>
+        <div class="presentation" id="presentation">
+          <div class="text_presentation">
+            <h2>Présentation de l'auto-école <span style="color: #2ea2e1; border-bottom: 3px solid #2ea2e1;">EFC</span> </h2>
+            <p>
+              L'EFC Auto-école est une auto-école située à <span style="color: #77b72d; border-bottom: 3px solid #77b72d;">Mantes-la-jolie.</span>
+              Nous vous proposons de passer votre permis de conduire ou votre code de la route. 
+              Nous vous accompagnons tout au long de votre formation pour vous aider à obtenir votre permis de conduire. 
+              Nous vous proposons des formations adaptées à vos besoins et à votre rythme. 
+              Nous vous proposons des formations pour passer votre permis de conduire en accéléré ou en
+              formation classique. 
+            </p>
+          </div>
+          <div class="img_presentation">
+            <img src="./public/assets/accueil/images/City driver-bro.svg" alt="Présentation de l'auto-école">
+          </div>
+        </div>
+
+        <div class="voir_nos_formations" id="formations">
+          <h2>Nos formations</h2>
+          <div class="cards_formation">
+            <div class="card_formation">
+              <img src="./public/assets/accueil/images/formations/code.png" alt="Voiture">
+              <div class="title_formation">Code</div>
+              <p class="p_formation">
+                Découvrez nos formations pour passer votre code auto & moto.
+              </p>
+              <a href="" class="btn_formation">En savoir plus</a>
+            </div>
+            <div class="card_formation">
+              <img src="./public/assets/accueil/images/formations/voiture-decapotable.png" alt="Voiture">
+              <div class="title_formation">Voiture</div>
+              <p class="p_formation">
+                Découvrez nos formations à partir du post permis jusqu'au permis B.
+              </p>
+              <a href="" class="btn_formation">En savoir plus</a>
+            </div>
+            <div class="card_formation">
+              <img src="./public/assets/accueil/images/formations/stage-accelerer.png" alt="Voiture">
+              <div class="title_formation">Stage accéléré</div>
+              <p class="p_formation">
+                Découvrez nos formations en stage accéléré pour passer votre permis de conduire.
+              </p>
+              <a href="" class="btn_formation">En savoir plus</a>
+            </div>
+            <div class="card_formation">
+              <img src="./public/assets/accueil/images/formations/camion.png" alt="Voiture">
+              <div class="title_formation">Remorque</div>
+              <p class="p_formation">
+                Découvrez nos formations pour passer votre permis remorque. Permis B96 / BE
+              </p>
+              <a href="" class="btn_formation">En savoir plus</a>
+            </div>
+            <div class="card_formation">
+              <img src="./public/assets/accueil/images/formations/permis-de-conduire.png" alt="Voiture">
+              <div class="title_formation">Stage de récupération</div>
+              <p class="p_formation">
+                Découvrez nos stages pour récupérer vos points de permis de conduire.
+              </p>
+              <a href="" class="btn_formation">En savoir plus</a>
+            </div>
+            
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <h2 class="titre_contact">Nos Contacts</h2>
+        <div class="nos_contacts">
+          <div class="nous_retrouver">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d519.3654794159454!2d1.6807496633365067!3d49.00225843613828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6bf1208e8e1cd%3A0x7ecf4b17e30f3696!2sCampus%20de%20Mantes%20-%20Centre%20de%20Formation%20d&#39;Apprentis%20(CFA)!5e0!3m2!1sfr!2sfr!4v1712080030316!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="nous_contacter">
+            <h3>Nous contacter</h3>
+            <p>
+              <strong>Téléphone :</strong> <a href="tel:+33">01 34 77 00 00</a>  <br>
+              <strong>Email :</strong>
+              <a href="mailto:x" class="email">xxxxx@gmail.com </a>
+            </p>
+
+
+            <h3>Nous retrouver</h3>
+            <p>
+              Campus de Mantes - Centre de Formation d'Apprentis (CFA) <br>
+              1 Rue du Fort de la Bonde
+              78200 Mantes-la-Jolie
+            </p>
+          </div>
+        </div>
     </div>
 </body>
 </html>

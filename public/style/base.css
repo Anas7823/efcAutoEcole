@@ -1,0 +1,55 @@
+body{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.navbar_base{
+    z-index: 100; /* Evite que les éléments passe par dessus*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 2%;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100svw;
+    position: fixed;
+}
+
+.navbar_base .logo_nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo_nav .logo-efc{
+    height: 100%;
+    width: 100%;
+    min-width: 80px;
+    min-height: 80px;
+}
+
+.logo_nav .logo-qualiopi{
+    height: 100%;
+    width: 100%;
+}
+
+.liens_nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.liens_nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.liens_nav a:hover{
+    color: #2ea2e1;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
