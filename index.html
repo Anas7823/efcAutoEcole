@@ -75,7 +75,7 @@
               <p class="p_formation">
                 Découvrez nos formations en stage accéléré pour passer votre permis de conduire.
               </p>
-              <a href="" class="btn_formation">En savoir plus</a>
+              <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#stageAccelererModal">En savoir plus</a>
             </div>
             <div class="card_formation">
               <img src="./public/assets/accueil/images/formations/camion.png" alt="Voiture">
@@ -83,7 +83,7 @@
               <p class="p_formation">
                 Découvrez nos formations pour passer votre permis remorque. Permis B96 / BE
               </p>
-              <a href="" class="btn_formation">En savoir plus</a>
+              <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#remorqueModal">En savoir plus</a>
             </div>
             <div class="card_formation">
               <img src="./public/assets/accueil/images/formations/permis-de-conduire.png" alt="Voiture">
@@ -96,6 +96,7 @@
         </div>
         <div class="modals_formations">
           <div class="modal-dialog modal-xl">
+            <!-- Modal pour les formations du code de la route -->
             <div class="modal fade" id="codeModal" tabindex="-1" aria-labelledby="codeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -122,6 +123,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Modal pour les formations autos -->
             <div class="modal fade" id="voitureModal" tabindex="-1" aria-labelledby="voitureModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -176,6 +179,68 @@
                         <img src="./public/assets/accueil/images/formations/modals/voiture/passerelleB.png" alt="Passerelle B">
                         <div class="title_card_modal">Passerelle b</div>
                         <div class="description_card_modal">Passage du permis B en boîte automatique vers le permis B en boîte manuelle</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal pour les stages accélérés -->
+            <div class="modal fade" id="stageAccelererModal" tabindex="-1" aria-labelledby="stageAccelererModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="codeModalLabel">Stage accéléré</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container_modal">
+                      <!-- Présentation des  formations proposer -->
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/voiture/vitesse-manuelle.png" alt="Permis B">
+                        <div class="title_card_modal">Permis B</div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/voiture/permisAAC.png" alt="Permis AAC">
+                        <div class="title_card_modal">Permis AAC</div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/voiture/permisCS.png" alt="Permis CS">
+                        <div class="title_card_modal">Permis CS</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Modal pour les formations remorque -->
+            <div class="modal fade" id="remorqueModal" tabindex="-1" aria-labelledby="remorqueModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="codeModalLabel">Formations remorque</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container_modal">
+                      <!-- Présentation des  formations proposer -->
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/remorque/Permis B96.png" alt="Permis B96">
+                        <div class="title_card_modal">Permis B96</div>
+                        <div class="description_card_modal">Le permis B96 permet de tracter une remorque dont le PTAC est supérieur à 750 kg et inférieur ou égal à 3500 kg.</div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/remorque/PermisBE.png" alt="Permis BE">
+                        <div class="title_card_modal">Permis BE</div>
+                        <div class="description_card_modal">Le permis BE permet de tracter des remorques de 750 kg à 3500 kg. Requis si la somme des PTAC dépasse 4250 kg.</div>
                       </div>
                     </div>
                   </div>
