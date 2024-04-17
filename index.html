@@ -59,7 +59,7 @@
               <p class="p_formation">
                 Découvrez nos formations pour passer votre code auto & moto.
               </p>
-              <a href="" class="btn_formation">En savoir plus</a>
+              <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#codeModal">En savoir plus</a>
             </div>
             <div class="card_formation">
               <img src="./public/assets/accueil/images/formations/voiture-decapotable.png" alt="Voiture">
@@ -67,7 +67,7 @@
               <p class="p_formation">
                 Découvrez nos formations à partir du post permis jusqu'au permis B.
               </p>
-              <a href="" class="btn_formation">En savoir plus</a>
+              <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#voitureModal">En savoir plus</a>
             </div>
             <div class="card_formation">
               <img src="./public/assets/accueil/images/formations/stage-accelerer.png" alt="Voiture">
@@ -93,10 +93,100 @@
               </p>
               <a href="" class="btn_formation">En savoir plus</a>
             </div>
-            
         </div>
-      </div>
-
+        <div class="modals_formations">
+          <div class="modal-dialog modal-xl">
+            <div class="modal fade" id="codeModal" tabindex="-1" aria-labelledby="codeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="codeModalLabel">Code de la route</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container_modal">
+                      <!-- Présentation des 2 formations proposer pour auto et moto -->
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/code/voiture.png" alt="Voiture">
+                        <div class="title_card_modal">Code Auto</div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/code/moto.png" alt="Moto">
+                        <div class="title_card_modal">Code Moto</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="voitureModal" tabindex="-1" aria-labelledby="voitureModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="codeModalLabel">Formation voiture</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container_modal">
+                      <!-- Présentation des 2 formations proposer pour auto et moto -->
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/voiture/vitesse-manuelle.png" alt="Permis B">
+                        <div class="title_card_modal">Permis B</div>
+                        <div class="description_card_modal"></div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/voiture/vitesse-automatique.png" alt="Permis B boite auto">
+                        <div class="title_card_modal">Permis B boîte auto</div>
+                        <div class="description_card_modal"></div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/voiture/permisCS.png" alt="Permis B CS">
+                        <div class="title_card_modal">Permis B conduite supervisée (CS)</div>
+                        <div class="description_card_modal"></div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/voiture/permisAAC.png" alt="Permis B AAC">
+                        <div class="title_card_modal">Permis B conduite accompgnée (AAC)</div>
+                        <div class="description_card_modal"></div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/voiture/permisb1.png" alt="Permis B1">
+                        <div class="title_card_modal">Permis B1</div>
+                        <div class="description_card_modal"></div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/voiture/eco.png" alt="Eco conduite">
+                        <div class="title_card_modal">Eco conduite</div>
+                        <div class="description_card_modal"></div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/voiture/formationpostpermis.png" alt="Formation post permis">
+                        <div class="title_card_modal">Formation post permis jeune conducteur</div>
+                        <div class="description_card_modal"></div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/voiture/senior.png" alt="Senior">
+                        <div class="title_card_modal">Formation senior</div>
+                        <div class="description_card_modal"></div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/voiture/passerelleB.png" alt="Passerelle B">
+                        <div class="title_card_modal">Passerelle b</div>
+                        <div class="description_card_modal">Passage du permis B en boîte automatique vers le permis B en boîte manuelle</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       <div class="contact" id="contact">
         <h2 class="titre_contact">Nos Contacts</h2>
         <div class="nos_contacts">
