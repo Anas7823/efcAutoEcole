@@ -91,7 +91,7 @@
               <p class="p_formation">
                 Découvrez nos stages pour récupérer vos points de permis de conduire.
               </p>
-              <a href="" class="btn_formation">En savoir plus</a>
+              <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#recuperationModal">En savoir plus</a>
             </div>
         </div>
         <div class="modals_formations">
@@ -250,6 +250,47 @@
                 </div>
               </div>
             </div>
+            
+            <!-- Modal pour les stages de récupération -->
+            <div class="modal fade" id="recuperationModal" tabindex="-1" aria-labelledby="recuperationModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="codeModalLabel">Stages de récupération</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container_modal">
+                      <!-- Présentation des  formations proposer -->
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/recuperation/trouver_un_stage.png" alt="Trouver un stage de récupération">
+                        <div class="title_card_modal">Trouver un stage de récupération</div>
+                        <div class="description_card_modal"></div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/recuperation/bareme_infraction.png" alt="Barème des infractions">
+                        <div class="title_card_modal">Barème des infractions</div>
+                        <div class="description_card_modal"></div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/recuperation/reglementation_infra.png" alt="Réglementation des infra">
+                        <div class="title_card_modal">Réglementation des infra</div>
+                        <div class="description_card_modal"></div>
+                      </div>
+                      <div class="modal_card">
+                        <img src="./public/assets/accueil/images/formations/modals/recuperation/solde_points.png" alt="Consulter mon solde de points">
+                        <div class="title_card_modal">Consulter mon solde de points</div>
+                        <div class="description_card_modal"><a href="https://mespoints.permisdeconduire.gouv.fr/bienvenue" target="_blank">Consulter mon solde de points</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       <div class="contact" id="contact">
