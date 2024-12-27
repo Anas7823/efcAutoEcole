@@ -94,9 +94,11 @@
 
 .voir_nos_formations{
     width: 100%;
-    min-height: 80vh;
+    min-height: 85vh;
     margin-top: 50px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .cards_formation{
@@ -105,15 +107,13 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 80vh;
-    margin-top: 50px;
 }
 
 .cards_formation .card_formation{
-    width: 25%;
-    min-width: 350px;
+    width: 17%;
+    /* min-width: 350px; */
     max-width: 360px;
-    height: 50vh;
+    height: 40vh;
     margin: 20px;
     border: 1px solid #000;
     border-radius: 5px;
@@ -152,6 +152,7 @@
     margin-top: 20px;
     font-size: 1.2rem;
     font-weight: 500;
+    max-height: 70px !important;
 }
 
 .card_formation .btn_formation{
@@ -219,7 +220,6 @@
     min-height: 80vh;
     margin-top: 50px;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     border: 1px solid #000;
@@ -243,6 +243,7 @@
     align-items: center;
     width: 100%;
     min-height: 50vh;
+    margin: auto;
 }
 
 .contact .nos_contacts .nous_retrouver{
