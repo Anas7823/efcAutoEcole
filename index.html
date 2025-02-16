@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,323 +8,359 @@
   <link rel="stylesheet" href="./public/style/base.css">
   <link rel="stylesheet" href="./public/style/index.css">
   <!-- Bootstrapp -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <!-- Bootstrapp -->
 </head>
+
 <body>
-    <div class="navbar_base">
-      <div class="logo_nav">
-        <img src="./public/assets/logo.jpg" class="logo-efc" alt="Logo EFC Auto-école">
-        <img src="./public/assets/logoqualiopi.png" class="logo-qualiopi" alt="Logo Qualiopi">
-
-      </div>
-      <div class="liens_nav">
-        <a href="#" class="item_nav">Accueil</a>
-        <a href="#formations" class="item_nav">Formations</a>
-        <a href="#contact" class="item_nav">Contact</a>
-      </div>
+  <div class="navbar_base">
+    <div class="logo_nav">
+      <img src="./public/assets/logo.png" class="logo-efc" alt="Logo EFC Auto-école">
+      <img src="./public/assets/logoqualiopi.png" class="logo-qualiopi" alt="Logo Qualiopi">
     </div>
-    <div class="container">
-      <div class="video_bg">
-        <video src="./public/assets/accueil/video/video.mp4" autoplay loop muted></video>
+    <div class="liens_nav">
+      <a href="#" class="item_nav">Accueil</a>
+      <a href="#formations" class="item_nav">Formations</a>
+      <a href="#contact" class="item_nav">Contact</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="video_bg">
+      <video src="./public/assets/accueil/video/video.mp4" autoplay loop muted></video>
+    </div>
+
+    <div class="accueil">
+      <h1>Bienvenue à l’auto école EFC école de formation et de conduite</h1>
+      <p>Vous souhaitez passer votre permis de conduire ou passer votre code ? Vous êtes au bon endroit !</p>
+      <a href="#presentation" class="btn-plus">En savoir plus</a>
+
+      <div id="presentation" style="height: 5rem;"></div>
+
+      <div class="presentation">
+        <div class="text_presentation">
+          <h2>Présentation de l'auto-école <span style="color: #2ea2e1; border-bottom: 3px solid #2ea2e1;">EFC</span>
+          </h2>
+          <p>
+            L'EFC Auto-école est une auto-école située à <span
+              style="color: #77b72d; border-bottom: 3px solid #77b72d;">Mantes-la-jolie.</span>
+            Nous vous proposons de passer votre permis de conduire ou votre code de la route.
+            Nous vous accompagnons tout au long de votre formation pour vous aider à obtenir votre permis de conduire.
+            Nous vous proposons des formations adaptées à vos besoins et à votre rythme.
+            Nous vous proposons des formations pour passer votre permis de conduire en accéléré ou en
+            formation classique.
+          </p>
+        </div>
+        <div class="img_presentation">
+          <img src="./public/assets/accueil/images/City driver-bro.svg" alt="Présentation de l'auto-école">
+        </div>
       </div>
 
-      <div class="accueil">
-        <h1>Bienvenue sur le site de l'EFC Auto-école</h1>
-        <p>Vous souhaitez passer votre permis de conduire ou passer votre code ? Vous êtes au bon endroit !</p>
-        <a href="#presentation" class="btn-plus">En savoir plus</a>
 
-        <div id="presentation" style="height: 5rem;"></div>
-
-        <div class="presentation">
-          <div class="text_presentation">
-            <h2>Présentation de l'auto-école <span style="color: #2ea2e1; border-bottom: 3px solid #2ea2e1;">EFC</span> </h2>
-            <p>
-              L'EFC Auto-école est une auto-école située à <span style="color: #77b72d; border-bottom: 3px solid #77b72d;">Mantes-la-jolie.</span>
-              Nous vous proposons de passer votre permis de conduire ou votre code de la route. 
-              Nous vous accompagnons tout au long de votre formation pour vous aider à obtenir votre permis de conduire. 
-              Nous vous proposons des formations adaptées à vos besoins et à votre rythme. 
-              Nous vous proposons des formations pour passer votre permis de conduire en accéléré ou en
-              formation classique. 
+      <div id="formations" style="height: 5rem;"></div>
+      <div class="voir_nos_formations">
+        <h2>Nos formations</h2>
+        <div class="cards_formation">
+          <div class="card_formation">
+            <img src="./public/assets/accueil/images/formations/code.png" alt="Voiture">
+            <div class="title_formation">Code</div>
+            <p class="p_formation">
+              Découvrez nos formations pour passer votre code auto & moto.
             </p>
+            <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#codeModal">En savoir plus</a>
           </div>
-          <div class="img_presentation">
-            <img src="./public/assets/accueil/images/City driver-bro.svg" alt="Présentation de l'auto-école">
+          <div class="card_formation">
+            <img src="./public/assets/accueil/images/formations/voiture-decapotable.png" alt="Voiture">
+            <div class="title_formation">Voiture</div>
+            <p class="p_formation">
+              Découvrez nos formations à partir du post permis jusqu'au permis B.
+            </p>
+            <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#voitureModal">En savoir plus</a>
           </div>
-        </div>
-
-
-        <div id="formations" style="height: 5rem;"></div>
-        <div class="voir_nos_formations">
-          <h2>Nos formations</h2>
-          <div class="cards_formation">
-            <div class="card_formation">
-              <img src="./public/assets/accueil/images/formations/code.png" alt="Voiture">
-              <div class="title_formation">Code</div>
-              <p class="p_formation">
-                Découvrez nos formations pour passer votre code auto & moto.
-              </p>
-              <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#codeModal">En savoir plus</a>
-            </div>
-            <div class="card_formation">
-              <img src="./public/assets/accueil/images/formations/voiture-decapotable.png" alt="Voiture">
-              <div class="title_formation">Voiture</div>
-              <p class="p_formation">
-                Découvrez nos formations à partir du post permis jusqu'au permis B.
-              </p>
-              <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#voitureModal">En savoir plus</a>
-            </div>
-            <div class="card_formation">
-              <img src="./public/assets/accueil/images/formations/stage-accelerer.png" alt="Voiture">
-              <div class="title_formation">Stage accéléré</div>
-              <p class="p_formation">
-                Découvrez nos formations en stage accéléré pour passer votre permis de conduire.
-              </p>
-              <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#stageAccelererModal">En savoir plus</a>
-            </div>
-            <div class="card_formation">
-              <img src="./public/assets/accueil/images/formations/camion.png" alt="Voiture">
-              <div class="title_formation">Remorque</div>
-              <p class="p_formation">
-                Découvrez nos formations pour passer votre permis remorque. Permis B96 / BE
-              </p>
-              <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#remorqueModal">En savoir plus</a>
-            </div>
-            <div class="card_formation">
-              <img src="./public/assets/accueil/images/formations/permis-de-conduire.png" alt="Voiture">
-              <div class="title_formation">Stage de récupération</div>
-              <p class="p_formation">
-                Découvrez nos stages pour récupérer vos points de permis de conduire.
-              </p>
-              <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#recuperationModal">En savoir plus</a>
-            </div>
+          <div class="card_formation">
+            <img src="./public/assets/accueil/images/formations/stage-accelerer.png" alt="Voiture">
+            <div class="title_formation">Stage accéléré</div>
+            <p class="p_formation">
+              Découvrez nos formations en stage accéléré pour passer votre permis de conduire.
+            </p>
+            <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#stageAccelererModal">En savoir
+              plus</a>
+          </div>
+          <div class="card_formation">
+            <img src="./public/assets/accueil/images/formations/camion.png" alt="Voiture">
+            <div class="title_formation">Remorque</div>
+            <p class="p_formation">
+              Découvrez nos formations pour passer votre permis remorque. Permis B96 / BE
+            </p>
+            <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#remorqueModal">En savoir plus</a>
+          </div>
+          <div class="card_formation">
+            <img src="./public/assets/accueil/images/formations/permis-de-conduire.png" alt="Voiture">
+            <div class="title_formation">Stage de récupération</div>
+            <p class="p_formation">
+              Découvrez nos stages pour récupérer vos points de permis de conduire.
+            </p>
+            <a href="" class="btn_formation" data-bs-toggle="modal" data-bs-target="#recuperationModal">En savoir
+              plus</a>
           </div>
         </div>
-        
-        <div class="modals_formations">
-          <div class="modal-dialog modal-xl">
-            <!-- Modal pour les formations du code de la route -->
-            <div class="modal fade" id="codeModal" tabindex="-1" aria-labelledby="codeModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="codeModalLabel">Code de la route</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="container_modal">
-                      <!-- Présentation des 2 formations proposer pour auto et moto -->
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/code/voiture.png" alt="Voiture">
-                        <div class="title_card_modal">Code Auto</div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/code/moto.png" alt="Moto">
-                        <div class="title_card_modal">Code Moto</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+      </div>
 
-            <!-- Modal pour les formations autos -->
-            <div class="modal fade" id="voitureModal" tabindex="-1" aria-labelledby="voitureModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="codeModalLabel">Formation voiture</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="container_modal">
-                      <!-- Présentation des 2 formations proposer pour auto et moto -->
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/voiture/vitesse-manuelle.png" alt="Permis B">
-                        <div class="title_card_modal">Permis B</div>
-                        <div class="description_card_modal"></div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/voiture/vitesse-automatique.png" alt="Permis B boite auto">
-                        <div class="title_card_modal">Permis B boîte auto</div>
-                        <div class="description_card_modal"></div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/voiture/permisCS.png" alt="Permis B CS">
-                        <div class="title_card_modal">Permis B conduite supervisée (CS)</div>
-                        <div class="description_card_modal"></div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/voiture/permisAAC.png" alt="Permis B AAC">
-                        <div class="title_card_modal">Permis B conduite accompgnée (AAC)</div>
-                        <div class="description_card_modal"></div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/voiture/permisb1.png" alt="Permis B1">
-                        <div class="title_card_modal">Permis B1</div>
-                        <div class="description_card_modal"></div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/voiture/eco.png" alt="Eco conduite">
-                        <div class="title_card_modal">Eco conduite</div>
-                        <div class="description_card_modal"></div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/voiture/formationpostpermis.png" alt="Formation post permis">
-                        <div class="title_card_modal">Formation post permis jeune conducteur</div>
-                        <div class="description_card_modal"></div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/voiture/senior.png" alt="Senior">
-                        <div class="title_card_modal">Formation senior</div>
-                        <div class="description_card_modal"></div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/voiture/passerelleB.png" alt="Passerelle B">
-                        <div class="title_card_modal">Passerelle b</div>
-                        <div class="description_card_modal">Passage du permis B en boîte automatique vers le permis B en boîte manuelle</div>
-                      </div>
+      <div class="modals_formations">
+        <div class="modal-dialog modal-xl">
+          <!-- Modal pour les formations du code de la route -->
+          <div class="modal fade" id="codeModal" tabindex="-1" aria-labelledby="codeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="codeModalLabel">Code de la route</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container_modal">
+                    <!-- Présentation des 2 formations proposer pour auto et moto -->
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/code/voiture.png" alt="Voiture">
+                      <div class="title_card_modal">Code Auto</div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/code/moto.png" alt="Moto">
+                      <div class="title_card_modal">Code Moto</div>
                     </div>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
                 </div>
               </div>
             </div>
-
-            <!-- Modal pour les stages accélérés -->
-            <div class="modal fade" id="stageAccelererModal" tabindex="-1" aria-labelledby="stageAccelererModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="codeModalLabel">Stage accéléré</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="container_modal">
-                      <!-- Présentation des  formations proposer -->
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/voiture/vitesse-manuelle.png" alt="Permis B">
-                        <div class="title_card_modal">Permis B</div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/voiture/permisAAC.png" alt="Permis AAC">
-                        <div class="title_card_modal">Permis AAC</div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/voiture/permisCS.png" alt="Permis CS">
-                        <div class="title_card_modal">Permis CS</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Modal pour les formations remorque -->
-            <div class="modal fade" id="remorqueModal" tabindex="-1" aria-labelledby="remorqueModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="codeModalLabel">Formations remorque</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="container_modal">
-                      <!-- Présentation des  formations proposer -->
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/remorque/Permis B96.png" alt="Permis B96">
-                        <div class="title_card_modal">Permis B96</div>
-                        <div class="description_card_modal">Le permis B96 permet de tracter une remorque dont le PTAC est supérieur à 750 kg et inférieur ou égal à 3500 kg.</div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/remorque/PermisBE.png" alt="Permis BE">
-                        <div class="title_card_modal">Permis BE</div>
-                        <div class="description_card_modal">Le permis BE permet de tracter des remorques de 750 kg à 3500 kg. Requis si la somme des PTAC dépasse 4250 kg.</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Modal pour les stages de récupération -->
-            <div class="modal fade" id="recuperationModal" tabindex="-1" aria-labelledby="recuperationModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="codeModalLabel">Stages de récupération</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="container_modal">
-                      <!-- Présentation des  formations proposer -->
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/recuperation/trouver_un_stage.png" alt="Trouver un stage de récupération">
-                        <div class="title_card_modal">Trouver un stage de récupération</div>
-                        <div class="description_card_modal"></div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/recuperation/bareme_infraction.png" alt="Barème des infractions">
-                        <div class="title_card_modal">Barème des infractions</div>
-                        <div class="description_card_modal"></div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/recuperation/reglementation_infra.png" alt="Réglementation des infra">
-                        <div class="title_card_modal">Réglementation des infra</div>
-                        <div class="description_card_modal"></div>
-                      </div>
-                      <div class="modal_card">
-                        <img src="./public/assets/accueil/images/formations/modals/recuperation/solde_points.png" alt="Consulter mon solde de points">
-                        <div class="title_card_modal">Consulter mon solde de points</div>
-                        <div class="description_card_modal"><a href="https://mespoints.permisdeconduire.gouv.fr/bienvenue" target="_blank">Consulter mon solde de points</a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
+
+          <!-- Modal pour les formations autos -->
+          <div class="modal fade" id="voitureModal" tabindex="-1" aria-labelledby="voitureModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="codeModalLabel">Formation voiture</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container_modal">
+                    <!-- Présentation des 2 formations proposer pour auto et moto -->
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/voiture/vitesse-manuelle.png"
+                        alt="Permis B">
+                      <div class="title_card_modal">Permis B</div>
+                      <div class="description_card_modal"></div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/voiture/vitesse-automatique.png"
+                        alt="Permis B boite auto">
+                      <div class="title_card_modal">Permis B boîte auto</div>
+                      <div class="description_card_modal"></div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/voiture/permisCS.png"
+                        alt="Permis B CS">
+                      <div class="title_card_modal">Permis B conduite supervisée (CS)</div>
+                      <div class="description_card_modal"></div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/voiture/permisAAC.png"
+                        alt="Permis B AAC">
+                      <div class="title_card_modal">Permis B conduite accompgnée (AAC)</div>
+                      <div class="description_card_modal"></div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/voiture/permisb1.png" alt="Permis B1">
+                      <div class="title_card_modal">Permis B1</div>
+                      <div class="description_card_modal"></div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/voiture/eco.png" alt="Eco conduite">
+                      <div class="title_card_modal">Eco conduite</div>
+                      <div class="description_card_modal"></div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/voiture/formationpostpermis.png"
+                        alt="Formation post permis">
+                      <div class="title_card_modal">Formation post permis jeune conducteur</div>
+                      <div class="description_card_modal"></div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/voiture/senior.png" alt="Senior">
+                      <div class="title_card_modal">Formation senior</div>
+                      <div class="description_card_modal"></div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/voiture/passerelleB.png"
+                        alt="Passerelle B">
+                      <div class="title_card_modal">Passerelle b</div>
+                      <div class="description_card_modal">Passage du permis B en boîte automatique vers le permis B en
+                        boîte manuelle</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal pour les stages accélérés -->
+          <div class="modal fade" id="stageAccelererModal" tabindex="-1" aria-labelledby="stageAccelererModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="codeModalLabel">Stage accéléré</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container_modal">
+                    <!-- Présentation des  formations proposer -->
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/voiture/vitesse-manuelle.png"
+                        alt="Permis B">
+                      <div class="title_card_modal">Permis B</div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/voiture/permisAAC.png"
+                        alt="Permis AAC">
+                      <div class="title_card_modal">Permis AAC</div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/voiture/permisCS.png" alt="Permis CS">
+                      <div class="title_card_modal">Permis CS</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal pour les formations remorque -->
+          <div class="modal fade" id="remorqueModal" tabindex="-1" aria-labelledby="remorqueModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="codeModalLabel">Formations remorque</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container_modal">
+                    <!-- Présentation des  formations proposer -->
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/remorque/Permis B96.png"
+                        alt="Permis B96">
+                      <div class="title_card_modal">Permis B96</div>
+                      <div class="description_card_modal">Le permis B96 permet de tracter une remorque dont le PTAC est
+                        supérieur à 750 kg et inférieur ou égal à 3500 kg.</div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/remorque/PermisBE.png" alt="Permis BE">
+                      <div class="title_card_modal">Permis BE</div>
+                      <div class="description_card_modal">Le permis BE permet de tracter des remorques de 750 kg à 3500
+                        kg. Requis si la somme des PTAC dépasse 4250 kg.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal pour les stages de récupération -->
+          <div class="modal fade" id="recuperationModal" tabindex="-1" aria-labelledby="recuperationModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="codeModalLabel">Stages de récupération</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container_modal">
+                    <!-- Présentation des  formations proposer -->
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/recuperation/trouver_un_stage.png"
+                        alt="Trouver un stage de récupération">
+                      <div class="title_card_modal">Trouver un stage de récupération</div>
+                      <div class="description_card_modal"></div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/recuperation/bareme_infraction.png"
+                        alt="Barème des infractions">
+                      <div class="title_card_modal">Barème des infractions</div>
+                      <div class="description_card_modal"></div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/recuperation/reglementation_infra.png"
+                        alt="Réglementation des infra">
+                      <div class="title_card_modal">Réglementation des infra</div>
+                      <div class="description_card_modal"></div>
+                    </div>
+                    <div class="modal_card">
+                      <img src="./public/assets/accueil/images/formations/modals/recuperation/solde_points.png"
+                        alt="Consulter mon solde de points">
+                      <div class="title_card_modal">Consulter mon solde de points</div>
+                      <div class="description_card_modal"><a href="https://mespoints.permisdeconduire.gouv.fr/bienvenue"
+                          target="_blank">Consulter mon solde de points</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+      </div>
       <div class="contact" id="contact">
         <h2 class="titre_contact">Nos Contacts</h2>
         <div class="nos_contacts">
           <div class="nous_retrouver">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d519.3654794159454!2d1.6807496633365067!3d49.00225843613828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6bf1208e8e1cd%3A0x7ecf4b17e30f3696!2sCampus%20de%20Mantes%20-%20Centre%20de%20Formation%20d&#39;Apprentis%20(CFA)!5e0!3m2!1sfr!2sfr!4v1712080030316!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2617.430930898973!2d1.677371076762569!3d49.00238609056189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6bf0dce1c3a31%3A0xd1e15def9c69fdd7!2sMB%20Formation!5e0!3m2!1sfr!2sfr!4v1736004025018!5m2!1sfr!2sfr"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
           <div class="nous_contacter">
             <h3>Nous contacter</h3>
             <p>
-              <strong>Téléphone :</strong> <a href="tel:+33">01 34 77 00 00</a>  <br>
+              <strong>Téléphone :</strong> <a href="tel:+33745529299">07 45 52 92 99</a> <br>
               <strong>Email :</strong>
-              <a href="mailto:x" class="email">xxxxx@gmail.com </a>
+              <a href="mailto:contact.formationconduite@gmail.com" class="email">contact.formationconduite@gmail.com
+              </a>
             </p>
 
 
             <h3>Nous retrouver</h3>
             <p>
-              Campus de Mantes - Centre de Formation d'Apprentis (CFA) <br>
-              1 Rue du Fort de la Bonde
-              78200 Mantes-la-Jolie
+              Campus Cézanne de Mantes - Centre de Formation EFC<br>
+              7 Rue Paul Gauguin, 78200 Mantes-la-Jolie
             </p>
           </div>
         </div>
-    </div>
+      </div>
+
+      <div class="footer">
+        
+      </div>
 </body>
+
 </html>

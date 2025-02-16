@@ -25,13 +25,13 @@ body{
 .logo_nav .logo-efc{
     height: 100%;
     width: 100%;
-    min-width: 80px;
+    min-width: 180px;
     min-height: 80px;
 }
 
 .logo_nav .logo-qualiopi{
-    height: 100%;
-    width: 100%;
+    height: 75%;
+    width: 75%;
 }
 
 .liens_nav{
