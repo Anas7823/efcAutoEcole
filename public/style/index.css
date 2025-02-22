@@ -304,14 +304,16 @@
 }
 
 .contact .nos_contacts .nous_contacter .contact_form .container_champs input{
-    width: 95%;
+    width: 97%;
     border: none;
     border-bottom: 1px solid #000;
 }
 
 .contact .nos_contacts .nous_contacter .contact_form .container_champs textarea{
-    width: 95%;
+    width: 97%;
     border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #000;
 }
 
 .contact .nos_contacts .nous_contacter .contact_form .identite{
@@ -372,25 +374,33 @@
 
 .contact .nos_contacts .nous_contacter .contact_form textarea:focus{
     outline: none;
-    border: 1px solid #2ea2e1;
+    border: none;
+    border-bottom: 1px solid #2ea2e1;
+}
+
+.btn_envoyer_container{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: end !important;
 }
 
 .contact .nos_contacts .nous_contacter .contact_form .btn_envoyer{
     width: 25%;
-    margin-top: 20px;
-    margin-left: 2rem;
+    /* margin-top: 20px; */
+    /* margin-left: 2rem; */
     padding: 10px 20px;
     border: 2px solid #0000004b;
     border-radius: 5px;
     text-decoration: none;
-    color: #000;
+    color: #eaeaea;
+    background-color: #2ea2e1;
     font-size: 1.3rem;
     font-weight: 500;
     transition: 0.3s;
 }
 
 .contact .nos_contacts .nous_contacter .contact_form .btn_envoyer:hover{
-    background-color: #2ea2e1;
+    background-color: #3b6bd9;
     color: #fff;
     border: 2px solid #03476b52;
     transition: 0.3s;

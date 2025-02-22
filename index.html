@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./public/assets/logo_simple.png">
   <title>EFC Auto-école</title>
   <link rel="stylesheet" href="./public/style/base.css">
   <link rel="stylesheet" href="./public/style/index.css">
@@ -25,9 +26,11 @@
     <div class="liens_nav">
       <a href="#" class="item_nav">Accueil</a>
       <a href="#formations" class="item_nav">Formations</a>
+      <a href="#cpf" class="item_nav">Offres CPF</a>
       <a href="#contact" class="item_nav">Contact</a>
     </div>
   </div>
+  
   <div class="container">
     <div class="video_bg">
       <video src="./public/assets/accueil/video/video.mp4" autoplay loop muted></video>
@@ -329,6 +332,16 @@
 
         </div>
       </div>
+
+
+      <div class="cpf" id="cpf">
+        <h2 class="titre_contact">Offres CPF</h2>
+        <div class="nos_offres">
+          <!-- 3 offres sous forme de cards  -->
+        </div>
+      </div>
+
+
       <div class="contact" id="contact">
         <h2 class="titre_contact">Nos Contacts</h2>
         <div class="nos_contacts">
@@ -358,13 +371,15 @@
               </div>
               <div class="container_champs champ_tel">
                 <label for="tel">Téléphone :</label>
-                <input type="tel" id="tel" name="tel" placeholder="07..." required>
+                <input type="tel" id="tel" name="tel" placeholder="07 12 34 56 78" required>
               </div>
               <div class="container_champs champ_message">
                 <label for="message">Message :</label>
                 <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
               </div>
-              <button class="btn_envoyer" type="submit">Envoyer</button>
+              <div class="container_champs btn_envoyer_container">
+                <button class="btn_envoyer" type="submit">Envoyer</button>
+              </div>
             </form>
           </div>
         </div>
@@ -373,24 +388,25 @@
   </div>
 
 
-      <div class="footer">
-        <!-- Footer avec les contacts & liens -->
-          <div class="footer_contact_logo">
-            <img src="./public/assets/logo_simple.png" alt="Logo EFC Auto-école">
-            <img src="./public/assets/logoqualiopi.png" alt="Logo Qualiopi">
-          </div>
-  
-          <div class="footer_contact_container">
-            <div class="footer_contact_container_contact">
-              <a href="tel:+33745529299">07 45 52 92 99</a>
-              <a href="mailto:contact.formationconduite@gmail.com" class="email">contact.formationconduite@gmail.com</a>
-              <a href="https://maps.app.goo.gl/ZbU8eqQkSaMAb4kcA" target="_blank">7 Rue Paul Gauguin, 78200 Mantes-la-Jolie</a>
-            </div>
-  
-          </div>
-        
-        <!--Footer avec les liens -->
+  <div class="footer">
+    <!-- Footer avec les contacts & liens -->
+    <div class="footer_contact_logo">
+      <img src="./public/assets/logo_simple.png" alt="Logo EFC Auto-école">
+      <img src="./public/assets/logoqualiopi.png" alt="Logo Qualiopi">
+    </div>
+
+    <div class="footer_contact_container">
+      <div class="footer_contact_container_contact">
+        <a href="tel:+33745529299">07 45 52 92 99</a>
+        <a href="mailto:contact.formationconduite@gmail.com" class="email">contact.formationconduite@gmail.com</a>
+        <a href="https://maps.app.goo.gl/ZbU8eqQkSaMAb4kcA" target="_blank">7 Rue Paul Gauguin, 78200
+          Mantes-la-Jolie</a>
       </div>
-    </body>
+
+    </div>
+
+    <!--Footer avec les liens -->
+  </div>
+</body>
 
 </html>
