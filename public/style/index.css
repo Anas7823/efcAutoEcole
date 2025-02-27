@@ -1,6 +1,5 @@
 .container{
     max-width: 100svw !important;
-    background-color: whitesmoke;
 }
 
 .video_bg{
@@ -116,6 +115,7 @@
     max-width: 360px;
     height: 40vh;
     margin: 20px;
+    background-color: white;
     border: 1px solid #000;
     border-radius: 5px;
     display: flex;
@@ -257,7 +257,7 @@
 
 .cpf .nos_offres .card_offre .titre{
     width: 100%;
-    height: 100px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,12 +292,15 @@
 
 
 .cpf .nos_offres .card_offre .description{
+    border-top: 1px solid #EEEEEE;
     width: 90%;
+    height: 50%;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -401,6 +404,7 @@
     width: 97%;
     border: none;
     border-bottom: 1px solid #000;
+    background-color: whitesmoke;
 }
 
 .contact .nos_contacts .nous_contacter .contact_form .container_champs textarea{
@@ -408,6 +412,7 @@
     border-radius: 5px;
     border: none;
     border-bottom: 1px solid #000;
+    background-color: whitesmoke;
 }
 
 .contact .nos_contacts .nous_contacter .contact_form .identite{
@@ -431,6 +436,7 @@
     width: 100%;
     border: none;
     border-bottom: 1px solid #000;
+    background-color: whitesmoke;
 }
 
 .contact .nos_contacts .nous_contacter .contact_form .champ_nom label{
@@ -452,6 +458,7 @@
     width: 100%;
     border: none;
     border-bottom: 1px solid #000;
+    background-color: whitesmoke;
 }
 
 .contact .nos_contacts .nous_contacter .contact_form .champ_prn label{

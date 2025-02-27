@@ -1,6 +1,7 @@
 body{
     scroll-behavior: smooth;
     margin: 0;
+    background-color: whitesmoke !important;
 }
 
 .navbar_base{
